@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐藏</title>
+    <!-- 引入Tailwind CSS用于美化页面 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入字体图标（可选） -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 配置Tailwind自定义样式 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6', // 自定义主色调（蓝色）
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'], // 自定义字体
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- 自定义工具类 -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .content-auto {
+                content-visibility: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- 页头区域 -->
+        <header class="mb-8 text-center">
+            <h1 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-gray-800 mb-2 text-shadow">部分不过审章节下载步骤</h1>
+            <p class="text-gray-500 italic">请先看完再下载</p>
+        </header>
+        
+        <!-- 主要内容区域 -->
+        <main class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <div class="prose max-w-none">
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                     ios或安卓都用QQ浏览器下载，别的浏览器可能会出现各种问题。
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                   下载链接：https://wwwr.lanzoul.com/b01390m6pi
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    访问和解压密码都是kele，可乐拼音小写，
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    若是提交没反应，下载显示文件错误、空白等各种问题，换QQ浏览器就能解决。
+                </p>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    下载链接可以保存，更新后重新下载即可。
+                </p>
+            </div>
+        </main>
+        
+        <!-- 页脚区域 -->
+        <footer class="mt-8 text-center text-gray-500 text-sm">
+            <p>© 可乐同学 | 不会的可以在书友群询问</p>
+        </footer>
+    </div>
+</body>
+</html>
